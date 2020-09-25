@@ -1,1 +1,59 @@
-<h2>테스트입니다.</h2>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./cliker.js"></script>
+    <title>TOUCH</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="clicker">
+        <div class="row">
+          <div class="col characterInfo">
+            <div class="subTitle">MY Character</div>
+            <div class="subBox">
+              <div class="subCol">
+                <img
+                  src="https://user-images.githubusercontent.com/27988544/78903168-b86c5c80-7ab5-11ea-9f30-42a1b6583ae2.jpg"
+                  id="swordIcon"
+                  class="icon"
+                  width="100"
+                  alt="swordIcon"
+                />
+                <div id="power">0</div>
+              </div>
+              <div class="subCol">
+                <img
+                  src="https://user-images.githubusercontent.com/27988544/78900715-33337880-7ab2-11ea-9edf-fc3e7c8f4d6f.png"
+                  id="moneyIcon"
+                  class="icon"
+                  width="100"
+                  alt="moneyIcon"
+                />
+                <div id="money">0</div>
+              </div>
+            </div>
+          </div>
+          <div class="col upgradeBoard">
+            <div class="subTitle">upgrade board</div>
+            <div class="subBox">
+              <div class="subCol">
+                <div class="btn" id="powerUpgrade" onclick="upgrade(event)">
+                  공격력 강화
+                </div>
+              </div>
+              <div class="subCol">
+                <div class="btn" id="moneyUpgrade" onclick="upgrade(event)">
+                  자본 증가
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
