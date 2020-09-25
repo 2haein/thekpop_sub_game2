@@ -9,5 +9,9 @@ const addMoney = () => {
 }
 
 const upgrade = (event) => {
-  alert(event.target.id);
+  if (event.target.id === 'powerUpgrade') {
+    addPower()
+  } else {
+    addMoney()
+  }
 }
